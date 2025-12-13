@@ -1942,6 +1942,13 @@ html.filter-grayscale {
 	/*text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);*/
 	filter: drop-shadow(0px 1px 5px #0005);
 }
+.post-header.post-header-with-thumbnail .post-header-text-container .article-header-style-preview a,
+.post-header.post-header-with-thumbnail .post-header-text-container .post-title-style-default a,
+.post-header.post-header-with-thumbnail .post-header-text-container .post-title-style-1 a,
+.post-header.post-header-with-thumbnail .post-header-text-container .post-title-style-2 a {
+	color: rgba(255, 255, 255, 0.95) !important;
+	filter: drop-shadow(0px 1px 5px #0005);
+}
 .post-header.post-header-with-thumbnail .post-header-text-container .post-meta {
 	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
@@ -5235,4 +5242,84 @@ html.using-safari #blog_setting_card_radius_to_default:before {
 }
 html.using-safari .friend-link-description:after {
 	display: none;
+}
+
+/* Article Header Style Preview Classes */
+.article-header-style-preview {
+	font-size: 26px;
+	position: relative;
+}
+.article-header-style-preview.style-1:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: #5e72e4;
+	opacity: .25;
+	pointer-events: none;
+	border-radius: 15px;
+	left: -2px;
+	bottom: 0px;
+	width: 45px;
+	height: 13px;
+}
+.article-header-style-preview.style-2:before {
+	content: '';
+	display: inline-block;
+	background: #5e72e4;
+	opacity: 1;
+	pointer-events: none;
+	border-radius: 15px;
+	width: 6px;
+	vertical-align: middle;
+	height: 26px;
+	margin-right: 10px;
+	margin-bottom: 4px;
+}
+
+/* Independent Post Title Styles */
+.post-title-style-default {
+	font-size: 26px;
+	position: relative;
+}
+
+.article-header-style-1 article h1.post-title-style-default:after,
+.article-header-style-2 article h1.post-title-style-default:before {
+	display: none !important;
+	content: none !important;
+}
+
+.post-title-style-1 {
+	font-size: 26px;
+	position: relative;
+}
+.post-title-style-1:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: #5e72e4;
+	opacity: .25;
+	pointer-events: none;
+	border-radius: 15px;
+	left: -2px;
+	bottom: 0px;
+	width: 45px;
+	height: 13px;
+}
+
+.post-title-style-2 {
+	font-size: 26px;
+	position: relative;
+}
+.post-title-style-2:before {
+	content: '';
+	display: inline-block;
+	background: #5e72e4;
+	opacity: 1;
+	pointer-events: none;
+	border-radius: 15px;
+	width: 6px;
+	vertical-align: middle;
+	height: 26px;
+	margin-right: 10px;
+	margin-bottom: 4px;
 }
