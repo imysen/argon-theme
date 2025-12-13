@@ -16,7 +16,7 @@
 				</style>";
 			}
 		?>
-		<h1 class="article-header-style-preview style-default">
+		<h1 class="post-title-style-default">
 			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		</h1>
 		<div class="post-meta">
@@ -100,7 +100,7 @@
 					<div class='argon-timeline-node'>
 						<div class='argon-timeline-time'><?php echo mysql2date('m-d', $post -> post_date); ?></div>
 						<div class='argon-timeline-card card bg-gradient-secondary archive-timeline-title'>
-							<h1 class="article-header-style-preview style-default"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+							<h1 class="post-title-style-default"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 						</div>
 					</div>
 					<?php

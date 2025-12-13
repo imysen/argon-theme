@@ -1,6 +1,6 @@
 <div class="shuoshuo-preview-container shuoshuo-foldable card bg-white shadow-sm border-0" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( get_the_title() != '' ) : ?>
-			<h1 class="article-header-style-preview style-default"><a class="shuoshuo-title"><?php the_title(); ?></a></h1>
+			<h1 class="post-title-style-default"><a class="shuoshuo-title"><?php the_title(); ?></a></h1>
 		<?php endif; ?>
 
 		<div class="shuoshuo-content">

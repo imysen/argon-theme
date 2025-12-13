@@ -16,7 +16,9 @@
 				</style>";
 			}
 		?>
-		<h1 class="article-header-style-preview style-default"><a class="post-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		<h1 class="post-title-style-default">
+			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		</h1>
 		<div class="post-meta">
 			<?php
 				$metaList = explode('|', get_option('argon_article_meta', 'time|views|comments|categories'));

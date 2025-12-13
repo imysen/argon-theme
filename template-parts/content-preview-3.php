@@ -12,7 +12,7 @@
 			}
 		?>
 		<header class="post-header">
-			<h1 class="article-header-style-preview style-default">
+			<h1 class="post-title-style-default">
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</h1>
 			<div class="post-meta">
