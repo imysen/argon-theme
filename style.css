@@ -5236,3 +5236,35 @@ html.using-safari #blog_setting_card_radius_to_default:before {
 html.using-safari .friend-link-description:after {
 	display: none;
 }
+
+/* Article Header Style Preview Classes */
+.article-header-style-preview {
+	font-size: 26px;
+	position: relative;
+}
+.article-header-style-preview.style-1:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background: #5e72e4;
+	opacity: .25;
+	pointer-events: none;
+	border-radius: 15px;
+	left: -2px;
+	bottom: 0px;
+	width: 45px;
+	height: 13px;
+}
+.article-header-style-preview.style-2:before {
+	content: '';
+	display: inline-block;
+	background: #5e72e4;
+	opacity: 1;
+	pointer-events: none;
+	border-radius: 15px;
+	width: 6px;
+	vertical-align: middle;
+	height: 26px;
+	margin-right: 10px;
+	margin-bottom: 4px;
+}
