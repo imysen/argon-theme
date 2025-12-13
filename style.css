@@ -1864,11 +1864,27 @@ html.filter-grayscale {
 .post-title:hover {
 	letter-spacing: 1px;
 }
+.post-title-style-default a {
+	letter-spacing: 0.5px;
+	transition: all 0.35s ease;
+}
+.post-title-style-default a:hover {
+	letter-spacing: 1px;
+}
 #main.waterflow .post-title {
 	transition: all 0.3s ease;
 	display: inline-block;
 }
 #main.waterflow .post-title:hover {
+	letter-spacing: 0.5px;
+	transform: scale(1.02);
+	text-rendering: optimizeLegibility;
+}
+#main.waterflow .post-title-style-default a {
+	transition: all 0.3s ease;
+	display: inline-block;
+}
+#main.waterflow .post-title-style-default a:hover {
 	letter-spacing: 0.5px;
 	transform: scale(1.02);
 	text-rendering: optimizeLegibility;
