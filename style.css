@@ -1333,6 +1333,14 @@ html.darkmode #leftbar_announcement {
 .leftbar-announcement-title {
 	font-size: 18px;
 }
+.leftbar-announcement-title,
+.leftbar-announcement-content {
+	color: #000 !important;
+}
+html.darkmode #leftbar_announcement .leftbar-announcement-title,
+html.darkmode #leftbar_announcement .leftbar-announcement-content {
+	color: #fff !important;
+}
 .leftbar-announcement-content {
 	font-size: 15px;
 	line-height: 1.8;
@@ -1449,6 +1457,17 @@ html.darkmode .wp-block-calendar tbody td {
 #footer a {
 	color: #fff;
 }
+
+/* Theme credit color: black in light, white in dark */
+#footer .footer-theme-credit,
+#footer .footer-theme-credit a {
+	color: #555;
+}
+html.darkmode #footer .footer-theme-credit,
+html.darkmode #footer .footer-theme-credit a {
+	color: #fff;
+}
+
 
 /*浮动按钮栏 (回顶等)*/
 #float_action_buttons {
@@ -5339,4 +5358,10 @@ html.using-safari .friend-link-description:after {
 	height: 26px;
 	margin-right: 10px;
 	margin-bottom: 4px;
+}
+
+/* Force homepage/post list title colors (no thumbnail overlay) */
+.post .post-title-style-default,
+.post .post-title-style-default a {
+	color: var(--color-text-deeper) !important;
 }
