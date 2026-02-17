@@ -2387,7 +2387,7 @@ function startTypeEffect($element, text, interval){
 if ($(".hitokoto").length > 0){
 	$.ajax({
 		type: 'GET',
-		url: "https://v1.hitokoto.cn",
+		url: "https://hitokotov1.api.236668.xyz",
 		success: function(result){
 			$(".hitokoto").text(result.hitokoto);
 		},
